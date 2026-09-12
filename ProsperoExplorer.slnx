@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="README.md" />
+    <File Path="build.ps1" />
+  </Folder>
+  <Project Path="ProsperoExplorer.csproj" />
+  <Project Path="../SharpProspero/src/SharpProspero/SharpProspero.csproj" />
+</Solution>
