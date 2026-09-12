@@ -1,5 +1,7 @@
 # Prospero Explorer
 
+<img width="1280" height="720" alt="Prospero Explorer_20260912003907" src="https://github.com/user-attachments/assets/ee314a26-eb29-45ba-b334-2da44f24e36a" />
+
 A file explorer for the console, built on the SharpProspero SDK. It browses and manages the file
 system, unpacks and builds archives, plays audio and video, views and edits text, views and converts
 pictures, installs packages from the writable area and from removable devices, launches an installed
@@ -10,12 +12,12 @@ The interface draws its text with the console's own font when the system provide
 the built-in one otherwise, and every page carries a breadcrumb of where you are and a header that says
 what its buttons do.
 
-It exercises most of the SDK end to end, so it doubles as a way to check that a build of the toolchain
+It exercises most of the SharpProspero SDK end to end, so it doubles as a way to check that a build of the toolchain
 works on real hardware.
 
 ## Building
 
-The result is always a module folder, never an installable file.
+The result is always a module folder, not an installable pkg file (for now).
 
 ```bash
 pwsh ./build.ps1
@@ -28,7 +30,7 @@ The SDK is expected beside this project in the same checkout. Point elsewhere wi
 `SHARPPROSPERO_ROOT`.
 
 An installer treats a title already on the machine as present and declines to replace it, so a build
-meant to sit beside the last one needs a title of its own:
+meant to sit beside the last one needs a title of its own (or replaced):
 
 ```bash
 pwsh ./build.ps1 -TitleId PPSA99108
